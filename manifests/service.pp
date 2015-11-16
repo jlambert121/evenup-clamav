@@ -9,7 +9,7 @@
 #
 class clamav::service {
 
-  service { 'clamd':
+  service { 'clamd@scan':
     ensure => running,
     enable => true,
   }
