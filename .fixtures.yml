@@ -1,0 +1,4 @@
+fixtures:
+  symlinks:
+    clamav: "#{source_dir}"
+

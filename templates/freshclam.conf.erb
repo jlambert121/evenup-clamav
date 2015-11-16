@@ -1,0 +1,11 @@
+<% @freshclam_options.sort.each do |k, v| -%>
+<% Array(v).each do |av| -%>
+<%= %Q(#{k} #{av}) %>
+<% end -%>
+<% end -%>
+
+
+
+LogSyslog yes
+DatabaseMirror db.us.clamav.net
+DatabaseMirror database.clamav.net

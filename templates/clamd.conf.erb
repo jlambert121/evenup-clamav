@@ -1,0 +1,13 @@
+<% @clamd_options.sort.each do |k,v| -%>
+<% Array(v).each do |av| -%>
+<%= %Q(#{k} #{av}) %>
+<% end -%>
+<% end -%>
+
+
+
+LogSyslog yes
+DetectPUA yes
+ExcludePUA NetTool
+ScanPE no
+ScanOLE2 no
